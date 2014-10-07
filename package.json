@@ -1,49 +1,51 @@
 {
-  "name": "passport-google-auth",
-  "version": "0.0.1",
-  "description": "Google (OAuth2) authentication strategy for Passport and Node.js.",
-  "keywords": [
-    "passport",
-    "google",
-    "auth",
-    "authn",
-    "authentication",
-    "identity"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/RiptideCloud/passport-google-auth.git"
-  },
-  "bugs": {
-    "url": "http://github.com/RiptideCloud/passport-google-auth/issues"
-  },
-  "author": {
-    "name": "David Pate",
-    "email": "me@davidtpate.com",
-    "url": "http://davidtpate.com"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/MIT"
+    "name": "passport-google-auth",
+    "version": "0.0.1",
+    "description": "Google (OAuth2) authentication strategy for Passport and Node.js.",
+    "keywords": [
+        "passport",
+        "google",
+        "auth",
+        "authn",
+        "authentication",
+        "identity"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/RiptideCloud/passport-google-auth.git"
+    },
+    "bugs": {
+        "url": "http://github.com/RiptideCloud/passport-google-auth/issues"
+    },
+    "author": {
+        "name": "David Pate",
+        "email": "me@davidtpate.com",
+        "url": "http://davidtpate.com"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/MIT"
+        }
+    ],
+    "main": "index.js",
+    "dependencies": {
+        "passport-strategy": "1.x",
+        "googleapis": "^1.x",
+        "sinon": "^1.10.3"
+    },
+    "devDependencies": {
+        "istanbul": "^0.x",
+        "mocha": "^1.x",
+        "should": "^4.x",
+        "jshint": "^2.x",
+        "jscs": "^1.x"
+    },
+    "scripts": {
+        "test": "mocha --check-leaks --bail --reporter spec test/",
+        "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot test/",
+        "jshint": "jshint --show-non-errors .",
+        "jscs": "jscs .",
+        "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --check-leaks --reporter spec test/ && jshint --show-non-errors . && jscs ."
     }
-  ],
-  "main": "index.js",
-  "dependencies": {
-    "passport-strategy": "1.x",
-    "googleapis": "^1.x",
-    "sinon": "^1.10.3"
-  },
-  "devDependencies": {
-    "istanbul": "^0.x",
-    "mocha": "^1.x",
-    "should": "^4.x",
-    "jshint": "^2.x",
-    "jscs": "^1.x"
-  },
-  "scripts": {
-    "test": "mocha --check-leaks --bail --reporter spec test/",
-    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot test/",
-    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --check-leaks --reporter spec test/ && jshint --show-non-errors . && jscs ."
-  }
 }

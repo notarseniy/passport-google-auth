@@ -37,6 +37,7 @@
         "istanbul": "^0.x",
         "mocha": "^1.x",
         "should": "^4.x",
+        "xunit-file": "^0.x",
         "jshint": "^2.x",
         "jscs": "^1.x",
         "sinon": "^1.10.3"
@@ -46,6 +47,8 @@
         "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot test/",
         "jshint": "jshint --show-non-errors .",
         "jscs": "jscs .",
-        "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --check-leaks --reporter spec test/ && jshint --show-non-errors . && jscs ."
+        "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --check-leaks --reporter spec test/ && jshint --show-non-errors . && jscs .",
+        "test-ci": "istanbul cover node_modules/mocha/bin/_mocha --report cobertura -- --check-leaks  --timeout 60000 --reporter xunit-file test/ && istanbul report lcov",
+        "analyze-ci": "jshint --reporter=jslint --show-non-errors .  > jshint.xml | echo 'yay' && jscs . --reporter checkstyle > checkstyle.xml | echo 'yay'"
     }
 }

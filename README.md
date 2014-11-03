@@ -30,7 +30,7 @@ var passport = require('passport'),
     GoogleStrategy = require('passport-google-auth').Strategy;
 
 passport.use(new GoogleOAuth2Strategy({
-    clientID: '123-456-789',
+    clientId: '123-456-789',
     clientSecret: 'shhh-its-a-secret',
     callbackURL: 'https://www.example.com/auth/example/callback'
   },
@@ -50,7 +50,7 @@ var passport = require('passport'),
     GoogleStrategy = require('passport-google-auth').Strategy;
 
 passport.use(new GoogleOAuth2Strategy({
-    clientID: '123-456-789',
+    clientId: '123-456-789',
     clientSecret: 'shhh-its-a-secret',
     callbackURL: 'https://www.example.com/auth/example/callback'
   },

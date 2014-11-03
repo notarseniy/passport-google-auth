@@ -29,3 +29,8 @@ node_modules
 
 # IntelliJ
 .idea
+
+# Build artefacts
+checkstyle.xml
+jshint.xml
+xunit.xml

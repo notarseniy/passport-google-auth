@@ -37,20 +37,16 @@
         "googleapis": "^1.x"
     },
     "devDependencies": {
+        "buddy.js": "^0.x",
         "istanbul": "^0.x",
         "mocha": "^2.x",
-        "should": "^4.x",
-        "xunit-file": "^0.x",
+        "nsp": "^1.x",
+        "jscs": "^1.x",
         "jshint": "^2.x",
-        "jscs": "^1.x"
+        "jsinspect": "^0.x",
+        "should": "^4.x"
     },
     "scripts": {
-        "test": "node ./node_modules/mocha/bin/mocha --check-leaks --bail --reporter spec test/",
-        "test-cov": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot test/",
-        "jshint": "node ./node_modules/jshint/bin/jshint --show-non-errors --verbose .",
-        "jscs": "node ./node_modules/jscs/bin/jscs .",
-        "test-travis": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --check-leaks --reporter spec test/ && node ./node_modules/jshint/bin/jshint --show-non-errors . && node ./node_modules/jscs/bin/jscs .",
-        "test-ci": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report cobertura -- --check-leaks  --timeout 60000 --reporter xunit-file test/ && node ./node_modules/istanbul/lib/cli.js report lcov",
-        "analyze-ci": "node ./node_modules/jshint/bin/jshint --reporter=jslint --show-non-errors .  > jshint.xml | echo 'yay' && jscs . --reporter checkstyle > checkstyle.xml | echo 'yay'"
+        "test": "node ./node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- --check-leaks  --timeout 60000 --reporter spec test/ && node ./node_modules/jshint/bin/jshint --show-non-errors . && node ./node_modules/jscs/bin/jscs . && node ./node_modules/buddy.js/bin/buddy index.js lib test && node ./node_modules/nsp/bin/nspCLI.js audit-package"
     }
 }

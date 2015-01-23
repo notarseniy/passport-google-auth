@@ -19,8 +19,9 @@ unobtrusively integrated into any application or framework that supports
 [Express](http://expressjs.com/).
 
 ## Install
-
-    $ npm install passport-google-auth
+```bash
+npm install passport-google-auth
+```
 
 ## Usage
 
@@ -102,6 +103,49 @@ app.get('/auth/callback/google',
 );
 ```
 
+## Testing
+This repository uses [Mocha](http://mochajs.org/) as its test runner. Tests can be run by executing the following command:
+
+```bash
+npm test
+```
+
+This will run all tests and report on their success/failure in the console, additionally it will include our [Code Coverage](#code-coverage).
+
+## Code Coverage
+This repository uses [Istanbul](http://gotwarlost.github.io/istanbul/) as its code coverage tool. Code Coverage will be calculated when executing the following command:
+
+```bash
+npm test
+```
+
+This will report the Code Coverage to the console similar to the following:
+
+```bash
+=============================== Coverage summary ===============================
+Statements   : 78.07% ( 356/456 )
+Branches     : 50.23% ( 107/213 )
+Functions    : 74.77% ( 83/111 )
+Lines        : 78.07% ( 356/456 )
+================================================================================
+```
+
+Additionally, an interactive HTML report will be generated in `./coverage/lcov-report/index.html` which allows browsing the coverage by file.
+
+## Code Style
+This repository uses [JSHint](https://github.com/jshint/jshint) for static analysis, [JavaScript Code Style](https://github.com/jscs-dev/node-jscs)
+for validating code style, [JSInspect](https://github.com/danielstjules/jsinspect) to detect code duplication, [Buddy.js](https://github.com/danielstjules/buddy.js)
+to detect the use of [Magic Numbers](http://en.wikipedia.org/wiki/Magic_number_(programming)), and
+[Node Security Project](https://github.com/nodesecurity/nsp) for detecting potential security threats with our dependencies. Code inspections are run as part of
+standard testing, to re-evaluate them simply run:
+
+```bash
+npm test
+```
+
 ## License
 
-[The MIT License](http://opensource.org/licenses/MIT)
+[MIT](LICENSE)
+
+## Copyright
+> Copyright (c) 2014 Riptide Software Inc.

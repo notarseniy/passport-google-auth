@@ -34,7 +34,8 @@
         });
         it('should be able to specify the `verify` callback without options', function () {
             (function () {
-                var strategy = new GoogleOAuth2Strategy(function() {});
+                var strategy = new GoogleOAuth2Strategy(function () {
+                });
             }).should.throw('GoogleOAuth2Strategy requires a [clientId]');
         });
         it('should require the `clientId`', function () {

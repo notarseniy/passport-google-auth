@@ -1,7 +1,13 @@
 # Passport-Google-Auth
-[![NPM version](https://badge.fury.io/js/passport-google-auth.svg)](http://badge.fury.io/js/passport-google-auth)
+[![npm](https://img.shields.io/npm/v/passport-google-auth.svg)](https://www.npmjs.com/package/passport-google-auth)
+[![Downloads](https://img.shields.io/npm/dm/passport-google-auth.svg)](https://www.npmjs.com/package/passport-google-auth)
 [![Build Status](https://travis-ci.org/RiptideCloud/passport-google-auth.svg?branch=master)](https://travis-ci.org/RiptideCloud/passport-google-auth)
 [![Coverage Status](https://img.shields.io/coveralls/RiptideCloud/passport-google-auth.svg?branch=master)](https://coveralls.io/r/RiptideCloud/passport-google-auth)
+[![Codacy](https://www.codacy.com/project/badge/d30a71223ecc45878ccfd94e04276414)](https://www.codacy.com/public/davidtpate/passport-google-auth)
+[![Code Climate](https://codeclimate.com/github/RiptideCloud/passport-google-auth/badges/gpa.svg)](https://codeclimate.com/github/RiptideCloud/passport-google-auth)
+[![David](https://img.shields.io/david/RiptideCloud/passport-google-auth.svg)](https://david-dm.org/RiptideCloud/passport-google-auth)
+[![David](https://img.shields.io/david/dev/RiptideCloud/passport-google-auth.svg)](https://david-dm.org/RiptideCloud/passport-google-auth)
+[![David](https://img.shields.io/david/peer/RiptideCloud/passport-google-auth.svg)](https://david-dm.org/RiptideCloud/passport-google-auth)
 
 [Passport](http://passportjs.org/) strategies for authenticating with [Google](http://www.google.com/)
 using OAuth 2.0.
@@ -13,8 +19,9 @@ unobtrusively integrated into any application or framework that supports
 [Express](http://expressjs.com/).
 
 ## Install
-
-    $ npm install passport-google-auth
+```bash
+npm install passport-google-auth
+```
 
 ## Usage
 
@@ -96,6 +103,49 @@ app.get('/auth/callback/google',
 );
 ```
 
+## Testing
+This repository uses [Mocha](http://mochajs.org/) as its test runner. Tests can be run by executing the following command:
+
+```bash
+npm test
+```
+
+This will run all tests and report on their success/failure in the console, additionally it will include our [Code Coverage](#code-coverage).
+
+## Code Coverage
+This repository uses [Istanbul](http://gotwarlost.github.io/istanbul/) as its code coverage tool. Code Coverage will be calculated when executing the following command:
+
+```bash
+npm test
+```
+
+This will report the Code Coverage to the console similar to the following:
+
+```bash
+=============================== Coverage summary ===============================
+Statements   : 78.07% ( 356/456 )
+Branches     : 50.23% ( 107/213 )
+Functions    : 74.77% ( 83/111 )
+Lines        : 78.07% ( 356/456 )
+================================================================================
+```
+
+Additionally, an interactive HTML report will be generated in `./coverage/lcov-report/index.html` which allows browsing the coverage by file.
+
+## Code Style
+This repository uses [JSHint](https://github.com/jshint/jshint) for static analysis, [JavaScript Code Style](https://github.com/jscs-dev/node-jscs)
+for validating code style, [JSInspect](https://github.com/danielstjules/jsinspect) to detect code duplication, [Buddy.js](https://github.com/danielstjules/buddy.js)
+to detect the use of [Magic Numbers](http://en.wikipedia.org/wiki/Magic_number_(programming)), and
+[Node Security Project](https://github.com/nodesecurity/nsp) for detecting potential security threats with our dependencies. Code inspections are run as part of
+standard testing, to re-evaluate them simply run:
+
+```bash
+npm test
+```
+
 ## License
 
-[The MIT License](http://opensource.org/licenses/MIT)
+[MIT](LICENSE)
+
+## Copyright
+> Copyright (c) 2014 Riptide Software Inc.

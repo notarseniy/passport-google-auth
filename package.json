@@ -23,7 +23,11 @@
         "url": "http://davidtpate.com"
     },
     "contributors": [
-        "Lovell Fuller <npm@lovell.info>"
+        {
+            "name": "Lovell Fuller",
+            "email": "npm@lovell.info",
+            "url": "http://lovell.info"
+        }
     ],
     "licenses": [
         {

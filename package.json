@@ -1,6 +1,6 @@
 {
     "name": "passport-google-auth",
-    "version": "0.0.2",
+    "version": "1.0.0",
     "description": "Google (OAuth2) authentication strategy for Passport and Node.js.",
     "keywords": [
         "passport",
@@ -42,8 +42,7 @@
         "should": "^4.x",
         "xunit-file": "^0.x",
         "jshint": "^2.x",
-        "jscs": "^1.x",
-        "sinon": "^1.10.3"
+        "jscs": "^1.x"
     },
     "scripts": {
         "test": "node ./node_modules/mocha/bin/mocha --check-leaks --bail --reporter spec test/",

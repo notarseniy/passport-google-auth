@@ -1,7 +1,13 @@
 # Passport-Google-Auth
-[![NPM version](https://badge.fury.io/js/passport-google-auth.svg)](http://badge.fury.io/js/passport-google-auth)
+[![npm](https://img.shields.io/npm/v/passport-google-auth.svg)](https://www.npmjs.com/package/passport-google-auth)
+[![Downloads](https://img.shields.io/npm/dm/passport-google-auth.svg)](https://www.npmjs.com/package/passport-google-auth)
 [![Build Status](https://travis-ci.org/RiptideCloud/passport-google-auth.svg?branch=master)](https://travis-ci.org/RiptideCloud/passport-google-auth)
 [![Coverage Status](https://img.shields.io/coveralls/RiptideCloud/passport-google-auth.svg?branch=master)](https://coveralls.io/r/RiptideCloud/passport-google-auth)
+[![Codacy](https://www.codacy.com/project/badge/d30a71223ecc45878ccfd94e04276414)](https://www.codacy.com/public/davidtpate/passport-google-auth)
+[![Code Climate](https://codeclimate.com/github/RiptideCloud/passport-google-auth/badges/gpa.svg)](https://codeclimate.com/github/RiptideCloud/passport-google-auth)
+[![David](https://img.shields.io/david/RiptideCloud/passport-google-auth.svg)](https://david-dm.org/RiptideCloud/passport-google-auth)
+[![David](https://img.shields.io/david/dev/RiptideCloud/passport-google-auth.svg)](https://david-dm.org/RiptideCloud/passport-google-auth)
+[![David](https://img.shields.io/david/peer/RiptideCloud/passport-google-auth.svg)](https://david-dm.org/RiptideCloud/passport-google-auth)
 
 [Passport](http://passportjs.org/) strategies for authenticating with [Google](http://www.google.com/)
 using OAuth 2.0.

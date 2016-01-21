@@ -10,7 +10,7 @@
         "authentication",
         "identity"
     ],
-    "liscense": "MIT",
+    "license": "MIT",
     "repository": {
         "type": "git",
         "url": "git://github.com/RiptideCloud/passport-google-auth.git"

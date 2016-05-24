@@ -44,7 +44,7 @@
     "devDependencies": {
         "buddy.js": "^0.x",
         "istanbul": "^0.x",
-        "mocha": "^2.x",
+        "mocha": "^2.5.2",
         "nsp": "^2.x",
         "jscs": "^2.11.0",
         "jshint": "^2.x",

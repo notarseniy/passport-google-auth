@@ -41,9 +41,7 @@
         it('should require the `clientId`', function () {
             (function () {
                 var strategy = new GoogleOAuth2Strategy(
-                    {
-
-                    },
+                    {},
                     function () {
                         return '';
                     });

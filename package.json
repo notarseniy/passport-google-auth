@@ -49,7 +49,7 @@
         "jscs": "^2.11.0",
         "jshint": "^2.x",
         "jsinspect": "^0.x",
-        "should": "^8.2.2"
+        "should": "^9.0.0"
     },
     "scripts": {
         "test": "node ./node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- --check-leaks  --timeout 60000 --reporter spec test/ && node ./node_modules/jshint/bin/jshint --show-non-errors . && node ./node_modules/jscs/bin/jscs . && node ./node_modules/buddy.js/bin/buddy index.js lib test && nsp check"

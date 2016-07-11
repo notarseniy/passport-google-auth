@@ -39,7 +39,7 @@
     "main": "index.js",
     "dependencies": {
         "passport-strategy": "1.x",
-        "googleapis": "^9.0.0"
+        "googleapis": "^10.0.0"
     },
     "devDependencies": {
         "buddy.js": "^0.x",

@@ -47,7 +47,7 @@
         "mocha": "^3.1.0",
         "nsp": "^2.x",
         "jscs": "^3.0.3",
-        "jshint": "^2.x",
+        "jshint": "^2.9.3",
         "jsinspect": "^0.x",
         "should": "^10.0.0"
     },

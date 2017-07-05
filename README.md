@@ -36,7 +36,7 @@ accepts these credentials and calls `done` providing a user, as well as
 
 ```js
 var passport = require('passport'),
-    GoogleStrategy = require('passport-google-auth').Strategy;
+    GoogleOAuth2Strategy = require('passport-google-auth').Strategy;
 
 passport.use(new GoogleOAuth2Strategy({
     clientId: '123-456-789',
@@ -56,7 +56,7 @@ will look like the following instead.
 
 ```js
 var passport = require('passport'),
-    GoogleStrategy = require('passport-google-auth').Strategy;
+    GoogleOAuth2Strategy = require('passport-google-auth').Strategy;
 
 passport.use(new GoogleOAuth2Strategy({
     clientId: '123-456-789',
